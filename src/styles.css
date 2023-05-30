@@ -1,0 +1,87 @@
+.App {
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.stadia {
+    display: flex;
+    gap: 10px;
+}
+
+.stadium {
+    border: 1px solid gray;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addButton {
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(240, 169, 55);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete{
+    border: border;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100);
+}
+
+.delete:hover {
+    background-color: rgb(242, 100, 100);
+    color: white;
+}
+
+.update {
+    border: border;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton {
+    border: none;
+    padding: 10px;
+    background-color: rgb(240, 169, 55);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+hr {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.addButton:visited {
+    color: white;
+}
