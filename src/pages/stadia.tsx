@@ -10,7 +10,7 @@ const stadia = () => {
     useEffect(()=>{
         const fetchAllStadia = async ()=>{
             try{
-                const res = await axios.get("compendiumbackend.azurewebsites.net/stadia");
+                const res = await axios.get("https://compendiumbackend.azurewebsites.net/stadia");
                 setStadia(res.data)
             } catch (err) {
                 console.log(err);
@@ -21,7 +21,7 @@ const stadia = () => {
 
     const handleDelete = async (id: number) =>{
         try {
-            await axios.delete("compendiumbackend.azurewebsites.net/stadia/" + id)
+            await axios.delete("https://compendiumbackend.azurewebsites.net/stadia/" + id)
             window.location.reload()
         } catch (err) {
             console.log(err)

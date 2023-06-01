@@ -19,7 +19,7 @@ const add = () => {
     const handleClick = async (e: any) =>{
         e.preventDefault();
         try {
-            await axios.post("compendiumbackend.azurewebsites.net/add", stadium)
+            await axios.post("https://compendiumbackend.azurewebsites.net/add", stadium)
             navigate("/")
         } catch(err) {
             console.log(err)

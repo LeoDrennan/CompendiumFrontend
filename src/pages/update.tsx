@@ -14,7 +14,7 @@ const update = (thisStadium: Stadium) => {
     useEffect(()=>{
       const fetchThisStadium = async ()=>{
           try{
-              const res = await axios.get("compendiumbackend.azurewebsites.net/update/" + stadiumID);
+              const res = await axios.get("https://compendiumbackend.azurewebsites.net/update/" + stadiumID);
               setStadium(res.data)
           } catch (err) {
               console.log(err);
@@ -30,7 +30,7 @@ const update = (thisStadium: Stadium) => {
     const handleClick = async (e: any) =>{
         e.preventDefault();
         try {
-            await axios.put("compendiumbackend.azurewebsites.net/update/" + stadiumID, stadium)
+            await axios.put("https://compendiumbackend.azurewebsites.net/update/" + stadiumID, stadium)
             navigate("/")
         } catch(err) {
             console.log(err)
