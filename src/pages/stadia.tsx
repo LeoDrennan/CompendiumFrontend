@@ -10,7 +10,7 @@ const stadia = () => {
     useEffect(()=>{
         const fetchAllStadia = async ()=>{
             try{
-                const res = await axios.get("http://localhost:3001/stadia");
+                const res = await axios.get("http://localhost:3000/stadia");
                 setStadia(res.data)
             } catch (err) {
                 console.log(err);
@@ -21,7 +21,7 @@ const stadia = () => {
 
     const handleDelete = async (id: number) =>{
         try {
-            await axios.delete("http://localhost:3001/stadia/" + id)
+            await axios.delete("http://localhost:3000/stadia/" + id)
             window.location.reload()
         } catch (err) {
             console.log(err)

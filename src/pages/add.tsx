@@ -19,7 +19,7 @@ const add = () => {
     const handleClick = async (e: any) =>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/add", stadium)
+            await axios.post("http://localhost:3000/add", stadium)
             navigate("/")
         } catch(err) {
             console.log(err)

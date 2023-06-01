@@ -14,7 +14,7 @@ const update = (thisStadium: Stadium) => {
     useEffect(()=>{
       const fetchThisStadium = async ()=>{
           try{
-              const res = await axios.get("http://localhost:3001/update/" + stadiumID);
+              const res = await axios.get("http://localhost:3000/update/" + stadiumID);
               setStadium(res.data)
           } catch (err) {
               console.log(err);
@@ -30,7 +30,7 @@ const update = (thisStadium: Stadium) => {
     const handleClick = async (e: any) =>{
         e.preventDefault();
         try {
-            await axios.put("http://localhost:3001/update/" + stadiumID, stadium)
+            await axios.put("http://localhost:3000/update/" + stadiumID, stadium)
             navigate("/")
         } catch(err) {
             console.log(err)
